@@ -2,6 +2,11 @@ const content = {
   de: {
     metaTitle: 'Lars Geissbauer | Senior AI Engineer',
     brandRole: 'Senior AI Engineer',
+    mobileMenu: {
+      openLabel: 'Navigation oeffnen',
+      closeLabel: 'Navigation schliessen',
+      button: 'Menue',
+    },
     nav: {
       profile: 'Profil',
       impact: 'Warum Lars',
@@ -193,6 +198,11 @@ const content = {
   en: {
     metaTitle: 'Lars Geissbauer | Senior AI Engineer',
     brandRole: 'Senior AI Engineer',
+    mobileMenu: {
+      openLabel: 'Open navigation',
+      closeLabel: 'Close navigation',
+      button: 'Menu',
+    },
     nav: {
       profile: 'Profile',
       impact: 'Why Lars',
@@ -390,12 +400,36 @@ const state = {
 const revealElements = document.querySelectorAll('.reveal');
 const progressBar = document.querySelector('.scroll-progress-bar');
 const topbar = document.querySelector('.topbar');
+const navToggle = document.querySelector('.nav-toggle');
+const navToggleLabel = document.querySelector('.nav-toggle-label');
+const topbarPanel = document.querySelector('.topbar-panel');
 const navLinks = document.querySelectorAll('.nav a');
 const sections = document.querySelectorAll('main section[id]');
 const spotlightCards = document.querySelectorAll('.spotlight-card');
 const meshGlow = document.querySelector('.mesh-glow');
 const langButtons = document.querySelectorAll('.lang-btn');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function isMobileNavigation() {
+  return window.innerWidth <= 820;
+}
+
+function setNavigationOpen(isOpen) {
+  if (!topbar || !navToggle || !topbarPanel) {
+    return;
+  }
+
+  topbar.classList.toggle('is-open', isOpen);
+  navToggle.setAttribute('aria-expanded', String(isOpen));
+  document.body.classList.toggle('nav-open', isOpen && isMobileNavigation());
+
+  const menuState = content[state.lang].mobileMenu;
+  navToggle.setAttribute('aria-label', isOpen ? menuState.closeLabel : menuState.openLabel);
+}
+
+function closeNavigation() {
+  setNavigationOpen(false);
+}
 
 function setText(id, value) {
   const element = document.getElementById(id);
@@ -543,6 +577,12 @@ function renderLanguage(lang) {
 
   document.documentElement.lang = lang;
   document.title = data.metaTitle;
+
+  if (navToggle && navToggleLabel) {
+    const isOpen = topbar?.classList.contains('is-open');
+    navToggleLabel.textContent = data.mobileMenu.button;
+    navToggle.setAttribute('aria-label', isOpen ? data.mobileMenu.closeLabel : data.mobileMenu.openLabel);
+  }
 
   setText('brandRole', data.brandRole);
   Object.entries(data.nav).forEach(([key, value]) => {
@@ -715,6 +755,43 @@ function syncScrollState() {
     progressBar.style.width = `${Math.min(progress, 100)}%`;
   }
 }
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    const nextState = !topbar?.classList.contains('is-open');
+    setNavigationOpen(nextState);
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    if (isMobileNavigation()) {
+      closeNavigation();
+    }
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (!isMobileNavigation()) {
+    closeNavigation();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeNavigation();
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (!isMobileNavigation() || !topbar?.classList.contains('is-open')) {
+    return;
+  }
+
+  if (!topbar.contains(event.target)) {
+    closeNavigation();
+  }
+});
 
 syncScrollState();
 window.addEventListener('scroll', syncScrollState, { passive: true });
