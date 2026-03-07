@@ -780,6 +780,22 @@ main {
 .contact-card {
   display: grid;
   gap: 0.25rem;
+  min-height: 100%;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.contact-card:hover,
+.contact-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(21, 124, 116, 0.3);
+  background: rgba(255, 251, 247, 0.9);
+  box-shadow: var(--shadow-strong);
+}
+
+.contact-card:focus-visible {
+  outline: 2px solid rgba(21, 124, 116, 0.45);
+  outline-offset: 3px;
 }
 
 .reveal {
