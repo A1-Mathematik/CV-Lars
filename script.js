@@ -1,7 +1,6 @@
 const content = {
   de: {
     metaTitle: 'Lars Geissbauer | Senior AI Engineer',
-    pdfLabel: 'PDF-CV herunterladen',
     brandRole: 'Senior AI Engineer',
     nav: {
       profile: 'Profil',
@@ -179,11 +178,10 @@ const content = {
     contact: {
       kicker: 'Kontakt',
       title: 'Bereit fuer anspruchsvolle Rollen mit technischer Substanz',
-      intro: 'Fuer Bewerbungen, Interviews und den Versand eines finalen PDF-CVs steht hier ein klar strukturierter Kontaktbereich bereit.',
+      intro: 'Fuer Bewerbungen und Interviews steht hier ein klar strukturierter Kontaktbereich bereit.',
       panelLabel: 'Naechster Schritt',
-      panelTitle: 'PDF-Version direkt aus der Seite erzeugen',
-      panelText: 'Der Download-Button oeffnet das druckoptimierte Layout dieser CV-Seite. So laesst sich direkt eine PDF-Version fuer Bewerbungen speichern.',
-      panelButton: 'PDF-CV erzeugen',
+      panelTitle: 'Direkter Kontakt fuer den naechsten Schritt',
+      panelText: 'Alle relevanten Kontaktpunkte sind hier gebuendelt, damit Bewerbungen und Interviewanfragen schnell den richtigen Weg finden.',
       backTop: 'Zurueck nach oben',
       cards: [
         { label: 'E-Mail', value: 'Auf Anfrage verfuegbar', note: 'E-Mail-Adresse vor Versand der Bewerbung ergaenzen.' },
@@ -194,7 +192,6 @@ const content = {
   },
   en: {
     metaTitle: 'Lars Geissbauer | Senior AI Engineer',
-    pdfLabel: 'Download PDF CV',
     brandRole: 'Senior AI Engineer',
     nav: {
       profile: 'Profile',
@@ -372,11 +369,10 @@ const content = {
     contact: {
       kicker: 'Contact',
       title: 'Ready for demanding roles with real technical substance',
-      intro: 'For applications, interviews, and sharing a final PDF CV, this section keeps the contact details and export action easy to access.',
+      intro: 'For applications and interviews, this section keeps the contact details easy to access.',
       panelLabel: 'Next step',
-      panelTitle: 'Generate the PDF version directly from this page',
-      panelText: 'The download button opens the print-optimized CV layout so a PDF version can be saved immediately for applications.',
-      panelButton: 'Generate PDF CV',
+      panelTitle: 'Direct contact for the next step',
+      panelText: 'All relevant contact points are grouped here so applications and interview requests can reach the right place quickly.',
       backTop: 'Back to top',
       cards: [
         { label: 'Email', value: 'Available on request', note: 'Add the final email address before sending applications.' },
@@ -399,7 +395,6 @@ const sections = document.querySelectorAll('main section[id]');
 const spotlightCards = document.querySelectorAll('.spotlight-card');
 const meshGlow = document.querySelector('.mesh-glow');
 const langButtons = document.querySelectorAll('.lang-btn');
-const pdfButtons = [document.getElementById('pdfButton'), document.getElementById('contactPdfButton')];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function setText(id, value) {
@@ -557,8 +552,6 @@ function renderLanguage(lang) {
     }
   });
 
-  setText('pdfButton', data.pdfLabel);
-  setText('contactPdfButton', data.contact.panelButton);
   setText('heroPillPrimary', data.hero.pillPrimary);
   setText('heroPillSecondary', data.hero.pillSecondary);
   setText('heroKicker', data.hero.kicker);
@@ -779,16 +772,6 @@ if (!reduceMotion) {
 langButtons.forEach((button) => {
   button.addEventListener('click', () => {
     renderLanguage(button.dataset.lang);
-  });
-});
-
-pdfButtons.forEach((button) => {
-  if (!button) {
-    return;
-  }
-
-  button.addEventListener('click', () => {
-    window.print();
   });
 });
 

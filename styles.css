@@ -832,8 +832,7 @@ main {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "brand lang"
-      "nav nav"
-      "pdf pdf";
+      "nav nav";
     align-items: center;
     border-radius: 30px;
     width: min(calc(100% - 0.9rem), var(--max-width));
@@ -887,10 +886,6 @@ main {
   .lang-switch {
     grid-area: lang;
     justify-self: end;
-  }
-
-  #pdfButton {
-    grid-area: pdf;
   }
 
   .topbar-actions .button-compact {
