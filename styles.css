@@ -537,44 +537,8 @@ main {
 
 .avatar-card {
   display: grid;
-  grid-template-columns: minmax(190px, 0.9fr) minmax(0, 1.1fr);
-  gap: 1.2rem;
-  align-items: center;
-}
-
-.avatar-frame {
-  position: relative;
-  aspect-ratio: 1 / 1.1;
-  display: grid;
-  place-items: center;
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.92), transparent 34%),
-    linear-gradient(180deg, rgba(23, 54, 78, 0.95), rgba(15, 32, 48, 0.98));
-}
-
-.avatar-ring {
-  position: absolute;
-  inset: 12%;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow:
-    0 0 0 18px rgba(255, 255, 255, 0.05),
-    0 0 0 36px rgba(21, 124, 116, 0.08);
-}
-
-.avatar-core {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 58%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255, 251, 246, 0.92), rgba(235, 224, 210, 0.88));
-  color: var(--navy);
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2.6rem, 4vw, 3.8rem);
-  font-weight: 700;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
 }
 
 .avatar-meta h2 {
@@ -1029,10 +993,6 @@ main {
   .contact-card,
   .contact-panel {
     padding: 1.15rem;
-  }
-
-  .avatar-frame {
-    aspect-ratio: 1 / 0.96;
   }
 
   .avatar-meta h2 {
