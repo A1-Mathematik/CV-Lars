@@ -1,11 +1,11 @@
 const content = {
   de: {
-    metaTitle: 'Lars Geissbauer | AI Engineer fuer starke Produktteams',
+    metaTitle: 'Lars Geissbauer | AI Engineer für starke Produktteams',
     brandRole: 'Senior AI Engineer | AI & Integration',
     mobileMenu: {
-      openLabel: 'Navigation oeffnen',
-      closeLabel: 'Navigation schliessen',
-      button: 'Menue',
+      openLabel: 'Navigation öffnen',
+      closeLabel: 'Navigation schließen',
+      button: 'Menü',
     },
     nav: {
       profile: 'Profil',
@@ -17,21 +17,21 @@ const content = {
     hero: {
       pillPrimary: 'Senior AI Engineer',
       pillSecondary: 'AI • Integration • Trading Systems',
-      kicker: 'Software Engineering fuer kleine Teams mit hohem Anspruch',
+      kicker: 'Software Engineering für kleine Teams mit hohem Anspruch',
       title: 'Systeme bauen, <span>integrieren und unter Druck sauber liefern.</span>',
       lead:
-        'Lars Geissbauer entwickelt Software und AI-nahe Systeme fuer Teams, die schnell arbeiten, Verantwortung teilen und technisch vorne bleiben wollen. Sein Profil verbindet Algorithmik, Integration, Trading-nahe Systemerfahrung und produktionsreife Umsetzung dort, wo Korrektheit, Transparenz und Performance gleichzeitig zaehlen.',
+        'Lars Geissbauer entwickelt Software und AI-nahe Systeme für Teams, die schnell arbeiten, Verantwortung teilen und technisch vorne bleiben wollen. Sein Profil verbindet Algorithmik, Integration, Trading-nahe Systemerfahrung und produktionsreife Umsetzung dort, wo Korrektheit, Transparenz und Performance gleichzeitig zählen.',
       primaryCta: 'Kontakt aufnehmen',
       secondaryCta: 'Berufserfahrung ansehen',
       trust: [
-        { title: 'Stark in kleinen Teams', text: 'Am wirkungsvollsten dort, wo Verantwortung direkt uebernommen und Zusammenarbeit eng gelebt wird.' },
-        { title: 'Integration mit Substanz', text: 'Neue Logik, Signale und Systeme nicht nur entwickeln, sondern robust in reale Ablaeufe einbetten.' },
-        { title: 'Technik mit Wirkung', text: 'Monitoring, algorithmische Logik und saubere Delivery liefern Orientierung fuer Team und Management.' },
+        { title: 'Stark in kleinen Teams', text: 'Am wirkungsvollsten dort, wo Verantwortung direkt übernommen und Zusammenarbeit eng gelebt wird.' },
+        { title: 'Integration mit Substanz', text: 'Neue Logik, Signale und Systeme nicht nur entwickeln, sondern robust in reale Abläufe einbetten.' },
+        { title: 'Technik mit Wirkung', text: 'Monitoring, algorithmische Logik und saubere Delivery liefern Orientierung für Team und Management.' },
       ],
       avatarLabel: 'Professionelles Profil',
       avatarTitle: 'AI, Integration und produktive Systemverantwortung',
       avatarText:
-        'Positioniert fuer junge, leistungsstarke Teams, die nicht nach Buzzwords suchen, sondern nach jemandem, der Monitoring aufbaut, Signal-Logik operationalisiert und anspruchsvolle Software sauber in Betrieb bringt.',
+        'Positioniert für junge, leistungsstarke Teams, die nicht nach Buzzwords suchen, sondern nach jemandem, der Monitoring aufbaut, Signal-Logik operationalisiert und anspruchsvolle Software sauber in Betrieb bringt.',
       stats: [
         { value: 12, suffix: '+ Jahre', text: 'Erfahrung in Entwicklung, technischer Vermittlung und praktischer Delivery.' },
         { value: 5, suffix: '+ Jahre', text: 'Trading- und FinTech-Erfahrung in kleinen Teams mit hoher Schlagzahl.' },
@@ -41,15 +41,15 @@ const content = {
     },
     story: {
       kicker: 'Executive Summary',
-      title: 'Ein Profil fuer Teams, die viel bauen und wenig Theater brauchen',
+      title: 'Ein Profil für Teams, die viel bauen und wenig Theater brauchen',
       intro:
-        'Diese Seite praesentiert Lars als Engineer fuer Umfelder, in denen technische Qualitaet, Geschwindigkeit und Teamfit gleichzeitig wichtig sind: tief in den Details, klar in der Kommunikation und belastbar in der Umsetzung.',
+        'Diese Seite präsentiert Lars als Engineer in Umfeldern, in denen technische Qualität, Geschwindigkeit und Teamfit gleichzeitig wichtig sind: tief in den Details, klar in der Kommunikation und belastbar in der Umsetzung.',
       summaryLabel: 'Kurzprofil',
       summaryTitle: 'Technische Tiefe, operative Klarheit, produktive Umsetzung.',
       summaryBody:
-        'Lars baut Systeme, die nicht auf Folien gut aussehen muessen, sondern im Betrieb funktionieren. Besonders stark ist er dort, wo Monitoring, Signal- oder Zustandslogik, algorithmische Auswertung und saubere Softwareintegration zusammenkommen und fuer Team wie Management einen echten Unterschied machen.',
+        'Lars baut Systeme, die nicht auf Folien gut aussehen müssen, sondern im Betrieb funktionieren. Besonders stark ist er dort, wo Monitoring, Signal- oder Zustandslogik, algorithmische Auswertung und saubere Softwareintegration zusammenkommen und für Team und Management einen echten Unterschied machen.',
       strengthsLabel: 'Warum einstellen',
-      strengthsTitle: 'Staerken, die fuer Arbeitgeber schnell greifbar werden',
+      strengthsTitle: 'Stärken, die für Arbeitgeber schnell greifbar werden',
       promises: [
         { title: 'Build', text: 'Er setzt neue technische Bausteine pragmatisch auf, statt nur bestehende Systeme zu verwalten.' },
         { title: 'Integrate', text: 'Er verbindet Daten, Logik und operative Nutzung so, dass daraus ein funktionierendes Gesamtsystem wird.' },
@@ -60,37 +60,37 @@ const content = {
       kicker: 'Warum Lars',
       title: 'Was ein starkes Team mit diesem Profil konkret gewinnt',
       intro:
-        'Hier geht es nicht um ein generisches Skillset, sondern um konkrete Hebel fuer junge, leistungsstarke Teams: mehr Transparenz, bessere technische Entscheidungen und mehr Zugkraft in der Umsetzung.',
+        'Hier geht es nicht um ein generisches Skillset, sondern um konkrete Hebel für junge, leistungsstarke Teams: mehr Transparenz, bessere technische Entscheidungen und mehr Zugkraft in der Umsetzung.',
       cards: [
         {
           title: 'Monitoring, das Verantwortung sichtbar macht',
-          text: 'Aufbau von Trading-System-Monitoring, damit Verhalten, Zustaende und kritische Signale nicht implizit bleiben, sondern operativ nutzbar werden.',
+          text: 'Aufbau von Trading-System-Monitoring, damit Verhalten, Zustände und kritische Signale nicht implizit bleiben, sondern operativ nutzbar werden.',
         },
         {
           title: 'Algorithmik mit betrieblichem Nutzen',
-          text: 'Skripte und Berechnungslogik werden nicht isoliert gebaut, sondern als belastbare Grundlage fuer Entscheidungen, Analysen und Priorisierung.',
+          text: 'Skripte und Berechnungslogik werden nicht isoliert gebaut, sondern als belastbare Grundlage für Entscheidungen, Analysen und Priorisierung.',
         },
         {
           title: 'Integration statt Einzelkomponenten',
           text: 'Besonders wertvoll in Umfeldern, in denen neue Logik sauber an bestehende Prozesse, Tools und technische Schnittstellen angeschlossen werden muss.',
         },
         {
-          title: 'Klarheit fuer Team und Management',
-          text: 'Technische Arbeit wird so aufbereitet, dass sowohl Entwickler als auch Management schneller verstehen, handeln und priorisieren koennen.',
+          title: 'Klarheit für Team und Management',
+          text: 'Technische Arbeit wird so aufbereitet, dass sowohl Entwickler als auch Management schneller verstehen, handeln und priorisieren können.',
         },
       ],
     },
     experience: {
       kicker: 'Berufserfahrung',
       title: 'Stationen mit Fokus auf Verantwortung, Systemaufbau und Delivery',
-      intro: 'Die Laufbahn verbindet Trading-Naehe, Softwareentwicklung, technische Vermittlung und Hands-on-Arbeit in Umfeldern mit hoher fachlicher und operativer Dichte.',
+      intro: 'Die Laufbahn verbindet Trading-Nähe, Softwareentwicklung, technische Vermittlung und Hands-on-Arbeit in Umfeldern mit hoher fachlicher und operativer Dichte.',
       items: [
         {
           date: 'Jul 2025 - heute',
           company: 'LBBW',
           role: 'Senior Software Engineer | Vollzeit | Deutschland',
           focus: 'AI • Java • Enterprise',
-          text: 'Entwicklung anspruchsvoller Software im Finanzumfeld mit Fokus auf AI-nahe Loesungen, Integration in bestehende Unternehmenslandschaften und belastbare Umsetzung in Java-basierten Systemen.',
+          text: 'Entwicklung anspruchsvoller Software im Finanzumfeld mit Fokus auf AI-nahe Lösungen, Integration in bestehende Unternehmenslandschaften und belastbare Umsetzung in Java-basierten Systemen.',
           tags: ['Artificial Intelligence', 'Java', 'Enterprise Delivery'],
         },
         {
@@ -98,7 +98,7 @@ const content = {
           company: 'BTIG',
           role: 'Vice President | Lead Developer',
           focus: 'Trading Algorithms',
-          text: 'Technische Verantwortung fuer Trading-Algorithmen, Backend-Services und Monitoring-nahe Themen in einem leistungsgetriebenen FinTech-Setup mit engem Bezug zu operativen Entscheidungen.',
+          text: 'Technische Verantwortung für Trading-Algorithmen, Backend-Services und Monitoring-nahe Themen in einem leistungsgetriebenen FinTech-Setup mit engem Bezug zu operativen Entscheidungen.',
           tags: ['Algorithmic Trading', 'Backend Services', 'Monitoring', 'Lead Developer'],
         },
         {
@@ -106,23 +106,23 @@ const content = {
           company: 'BTIG',
           role: 'Associate Developer | Ingolstadt',
           focus: 'Algorithms • Data Science',
-          text: 'Arbeit an Algorithmen, Signal-Logik und analytischen Fragestellungen mit C#, Julia und Python als technisches Fundament fuer spaetere Fuehrungs- und Integrationsverantwortung.',
+          text: 'Arbeit an Algorithmen, Signal-Logik und analytischen Fragestellungen mit C#, Julia und Python als technisches Fundament für spätere Führungs- und Integrationsverantwortung.',
           tags: ['C#', 'Julia', 'Python', 'Signal Logic'],
         },
         {
           date: '2015 - 2022',
-          company: 'Selbststaendig',
+          company: 'Selbstständig',
           role: 'Video Producer | YouTube Tutorials',
           focus: 'Communication',
-          text: 'Erstellung technischer Inhalte in Mathematik, Physik und Informatik mit starkem Fokus auf Verstaendlichkeit, Eigenverantwortung und klarer Vermittlung komplexer Themen.',
+          text: 'Erstellung technischer Inhalte in Mathematik, Physik und Informatik mit starkem Fokus auf Verständlichkeit, Eigenverantwortung und klarer Vermittlung komplexer Themen.',
           tags: ['Content Creation', 'Presentation', 'Business Development'],
         },
         {
           date: '2014 - 2020',
-          company: 'Selbststaendig',
+          company: 'Selbstständig',
           role: 'Mathematik-Nachhilfe | Region Stuttgart',
           focus: 'Mentoring',
-          text: 'Langjaehrige Vermittlung mathematischer Inhalte mit Klarheit, Geduld und hoher fachlicher Substanz.',
+          text: 'Langjährige Vermittlung mathematischer Inhalte mit Klarheit, Geduld und hoher fachlicher Substanz.',
           tags: ['Tutoring', 'Critical Thinking', 'Teaching'],
         },
         {
@@ -137,10 +137,10 @@ const content = {
     },
     skills: {
       kicker: 'Kernkompetenzen',
-      title: 'Technologien, Domaenenwissen und Staerken mit echter Einsatzrelevanz',
-      intro: 'Breites technisches Fundament, kombiniert mit Integrationsstaerke, Problemverstaendnis und belastbarer Umsetzung in realen Teamsituationen.',
+      title: 'Technologien, Domänenwissen und Stärken mit echter Einsatzrelevanz',
+      intro: 'Breites technisches Fundament, kombiniert mit Integrationsstärke, Problemverständnis und belastbarer Umsetzung in realen Teamsituationen.',
       techStackLabel: 'Programmiersprachen',
-      techStackTitle: 'Vielseitig in der Sprache, praezise in der Umsetzung',
+      techStackTitle: 'Vielseitig in der Sprache, präzise in der Umsetzung',
       techStack: ['C#', 'Java', 'C++', 'Python', 'Rust', 'Julia', 'Flutter', 'JavaScript', 'ABAP'],
       domainLabel: 'AI & Data',
       domainTitle: 'Modelle, Algorithmen und wissenschaftliche Tiefe',
@@ -158,19 +158,19 @@ const content = {
         'Visual Studio, Git, Linux, Android, LaTeX, Matlab und Simulink',
         'Lead-Developer-Verantwortung, enge Zusammenarbeit und klare Priorisierung',
       ],
-      softSkillsLabel: 'Persoenliche Staerken',
+      softSkillsLabel: 'Persönliche Stärken',
       softSkillsTitle: 'Technisch stark, analytisch klar und vermittelbar',
       softSkillsList: [
-        'Analytische und kreative Problemlosung unter anspruchsvollen Bedingungen',
-        'Tutoring, Mentoring und starke Praesentation mit Substanz',
-        'Kollaborative Arbeitsweise und hoher Qualitaetsanspruch',
+        'Analytische und kreative Problemlösung unter anspruchsvollen Bedingungen',
+        'Tutoring, Mentoring und starke Präsentation mit Substanz',
+        'Kollaborative Arbeitsweise und hoher Qualitätsanspruch',
         'Breite Basis in Mathematik, Physik, Informatik, Mechatronik und Robotics',
       ],
     },
     education: {
       kicker: 'Ausbildung',
       title: 'Fundament aus Informatik, Mathematik und Engineering',
-      institution: 'Universitaet Stuttgart',
+      institution: 'Universität Stuttgart',
       degree: 'Bachelor of Science',
       program: 'Mechatronics, Robotics and Automation Engineering',
       years: '2014 - 2019',
@@ -182,17 +182,17 @@ const content = {
     },
     contact: {
       kicker: 'Kontakt',
-      title: 'Offen fuer starke Teams mit hoher technischer Schlagzahl',
+      title: 'Offen für starke Teams mit hoher technischer Schlagzahl',
       intro: 'Relevant sind vor allem Rollen in jungen, ambitionierten Teams mit echtem Build-, Integrations- und Delivery-Fokus.',
-      panelLabel: 'Naechster Schritt',
-      panelTitle: 'Direkter Kontakt fuer den naechsten technischen Austausch',
-      panelText: 'LinkedIn und GitHub sind hier direkt verlinkt fuer Teams, die schnelle Kommunikation, klare Profile und substanziellen technischen Austausch schaetzen.',
-      backTop: 'Zurueck nach oben',
+      panelLabel: 'Nächster Schritt',
+      panelTitle: 'Direkter Kontakt für den nächsten technischen Austausch',
+      panelText: 'LinkedIn und GitHub sind hier direkt verlinkt für Teams, die schnelle Kommunikation, klare Profile und substanziellen technischen Austausch schätzen.',
+      backTop: 'Zurück nach oben',
       cards: [
         {
           label: 'LinkedIn',
           value: 'linkedin.com/in/lars-g-56561a87',
-          note: 'Direkter Kontakt ueber das LinkedIn-Profil.',
+          note: 'Direkter Kontakt über das LinkedIn-Profil.',
           href: 'https://www.linkedin.com/in/lars-g-56561a87',
         },
         {
