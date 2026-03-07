@@ -6,16 +6,16 @@
     <title>Lars Geissbauer | Senior AI Engineer</title>
     <meta
       name="description"
-      content="CV und Profil von Lars Geissbauer. Senior AI Engineer mit Schwerpunkt auf AI, High Performance Computing, Algorithmen und FinTech."
+      content="Bilingual CV website for Lars Geissbauer, Senior AI Engineer focused on AI, high performance computing, algorithms, and fintech."
     />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23101f30'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Syne, Arial, sans-serif' font-size='28' font-weight='700' fill='%23f3efe6'%3ELG%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230f2030'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia, serif' font-size='28' font-weight='700' fill='%23f6efe2'%3ELG%3C/text%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Syne:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -26,540 +26,196 @@
     </div>
 
     <div class="page-shell">
-      <div class="background-orb orb-one"></div>
-      <div class="background-orb orb-two"></div>
-      <div class="background-orb orb-three"></div>
-      <div class="grid-glow" aria-hidden="true"></div>
+      <div class="bg-orb orb-a"></div>
+      <div class="bg-orb orb-b"></div>
+      <div class="bg-orb orb-c"></div>
+      <div class="mesh-glow" aria-hidden="true"></div>
 
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="Zur Startsektion">
+        <a class="brand" href="#top" aria-label="Start">
           <span class="brand-mark">LG</span>
-          <span class="brand-text">Lars Geissbauer</span>
+          <span>
+            <strong>Lars Geissbauer</strong>
+            <small id="brandRole">Senior AI Engineer</small>
+          </span>
         </a>
 
-        <nav class="nav" aria-label="Sektionen">
-          <a href="#profil">Profil</a>
-          <a href="#impact">Warum Lars</a>
-          <a href="#erfahrung">Erfahrung</a>
-          <a href="#skills">Kompetenzen</a>
-          <a href="#ausbildung">Ausbildung</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#profile" data-nav="profile"></a>
+          <a href="#impact" data-nav="impact"></a>
+          <a href="#experience" data-nav="experience"></a>
+          <a href="#skills" data-nav="skills"></a>
+          <a href="#contact" data-nav="contact"></a>
         </nav>
+
+        <div class="topbar-actions">
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-btn is-active" type="button" data-lang="de">DE</button>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <button class="button button-secondary button-compact" type="button" id="pdfButton"></button>
+        </div>
       </header>
 
       <main id="top">
-        <section class="hero section" id="profil">
+        <section class="hero section" id="profile">
           <div class="hero-copy reveal">
-            <div class="hero-kicker-row">
-              <span class="eyebrow-pill">Senior AI Engineer</span>
-              <span class="availability-pill">AI • HPC • FinTech • Algorithms</span>
+            <div class="eyebrow-row">
+              <span class="eyebrow-pill" id="heroPillPrimary"></span>
+              <span class="eyebrow-pill eyebrow-pill-muted" id="heroPillSecondary"></span>
             </div>
 
-            <p class="eyebrow">Software Engineer & AI Native | Production-Grade Systems</p>
-
-            <h1>
-              Intelligent systems,
-              <span>engineered for real-world pressure.</span>
-            </h1>
-
-            <p class="lead">
-              Lars Geissbauer entwickelt Software und AI-Systeme dort, wo Korrektheit,
-              Leistung und Skalierbarkeit nicht optional sind. Sein Profil verbindet
-              High Performance Computing, FinTech, Algorithmen und produktionsreife
-              Delivery in einer Weise, die für anspruchsvolle Teams sofort wirksam ist.
-            </p>
+            <p class="section-kicker" id="heroKicker"></p>
+            <h1 id="heroTitle"></h1>
+            <p class="hero-lead" id="heroLead"></p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#erfahrung">Berufserfahrung</a>
-              <a class="button button-secondary" href="#skills">Kernkompetenzen</a>
+              <a class="button button-primary" href="#contact" id="heroPrimaryCta"></a>
+              <a class="button button-ghost" href="#experience" id="heroSecondaryCta"></a>
             </div>
 
-            <div class="hero-proof-strip reveal" data-delay="140">
-              <article>
-                <span class="proof-label">Fokus</span>
-                <strong>Mission-Critical Engineering</strong>
-              </article>
-              <article>
-                <span class="proof-label">Arbeitsstil</span>
-                <strong>Tief technisch, klar im Delivery</strong>
-              </article>
-              <article>
-                <span class="proof-label">Mehrwert</span>
-                <strong>Performance mit Geschäftswirkung</strong>
-              </article>
-            </div>
+            <div class="trust-strip reveal" data-delay="120" id="trustStrip"></div>
           </div>
 
-          <aside class="hero-stage reveal" data-delay="120">
-            <div class="hero-stage-card spotlight-card">
-              <div class="stage-header">
-                <p class="panel-label">Executive Positioning</p>
-                <span class="stage-badge">Built for demanding environments</span>
+          <aside class="hero-visual reveal" data-delay="120">
+            <div class="avatar-panel spotlight-card">
+              <div class="avatar-card">
+                <div class="avatar-frame" aria-hidden="true">
+                  <div class="avatar-ring"></div>
+                  <div class="avatar-core">
+                    <span>LG</span>
+                  </div>
+                </div>
+
+                <div class="avatar-meta">
+                  <p class="panel-label" id="avatarLabel"></p>
+                  <h2 id="avatarTitle"></h2>
+                  <p id="avatarText"></p>
+                </div>
               </div>
 
-              <h2>AI-native builder for systems that must outperform.</h2>
-
-              <p>
-                Von Trading-Algorithmen und Backend-Services bis zu skalierbaren,
-                AI-gestützten Plattformen: Lars bewegt sich sicher zwischen Architektur,
-                Implementierung, Optimierung und technischer Verantwortung.
-              </p>
-
-              <ul class="headline-tags">
-                <li>C#</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Rust</li>
-                <li>Julia</li>
-                <li>Flutter</li>
-              </ul>
-            </div>
-
-            <div class="stats-grid">
-              <article class="stat-card reveal" data-delay="180">
-                <span class="stat-number" data-count="12">0</span>
-                <span class="stat-unit">+ Jahre</span>
-                <p>Erfahrung in Engineering, Tutoring, Entwicklung und technischer Vermittlung</p>
-              </article>
-              <article class="stat-card reveal" data-delay="240">
-                <span class="stat-number" data-count="5">0</span>
-                <span class="stat-unit">+ Jahre</span>
-                <p>Direkte FinTech- und Trading-Erfahrung mit Leistungs- und Qualitätsdruck</p>
-              </article>
-              <article class="stat-card reveal" data-delay="300">
-                <span class="stat-number" data-count="7">0</span>
-                <span class="stat-unit">Sprachen</span>
-                <p>Breite technische Abdeckung von Low-Level-Optimierung bis AI-Entwicklung</p>
-              </article>
-              <article class="stat-card reveal" data-delay="360">
-                <span class="stat-number" data-count="3">0</span>
-                <span class="stat-unit">Kerndomänen</span>
-                <p>AI, High Performance Computing und FinTech in einer seltenen Kombination</p>
-              </article>
+              <div class="hero-stat-stack" id="heroStats"></div>
             </div>
           </aside>
         </section>
 
-        <section class="section signature-section reveal" data-delay="120">
-          <div class="signature-rail">
-            <span>Artificial Intelligence</span>
-            <span>High Performance Computing</span>
-            <span>Algorithmic Trading</span>
-            <span>Backend Engineering</span>
-            <span>Distributed Systems</span>
-            <span>Research to Production</span>
-          </div>
+        <section class="section marquee-section reveal" data-delay="100">
+          <div class="marquee" id="marqueeTags"></div>
         </section>
 
-        <section class="section impact-section" id="impact">
+        <section class="section section-intro-block">
           <div class="section-heading reveal">
-            <p class="eyebrow">Warum Lars</p>
-            <h2>Was Arbeitgeber mit diesem Profil konkret gewinnen</h2>
-            <p class="section-intro">
-              Kein generischer Software-Lebenslauf, sondern ein Profil für Teams,
-              die technisches Gewicht, Geschwindigkeit und belastbare Umsetzung suchen.
-            </p>
+            <p class="section-kicker" id="storyKicker"></p>
+            <h2 id="storyTitle"></h2>
+            <p class="section-copy" id="storyIntro"></p>
           </div>
 
-          <div class="impact-grid">
-            <article class="impact-card reveal">
-              <span class="value-index">01</span>
-              <h3>Technische Tiefe bis ins Detail</h3>
-              <p>
-                Lars arbeitet nicht nur auf Feature-Ebene, sondern versteht Algorithmen,
-                numerische Verfahren, Hardware-Nähe und Systemverhalten in der Tiefe.
-              </p>
+          <div class="story-layout">
+            <article class="story-card spotlight-card reveal">
+              <p class="panel-label" id="summaryLabel"></p>
+              <h3 id="summaryTitle"></h3>
+              <p id="summaryBody"></p>
             </article>
 
-            <article class="impact-card reveal" data-delay="100">
-              <span class="value-index">02</span>
-              <h3>AI mit Produktionsmentalität</h3>
-              <p>
-                AI wird hier nicht als Demo gedacht, sondern als robuste, skalierbare
-                und wirtschaftlich sinnvolle Lösung im echten Betrieb.
-              </p>
-            </article>
-
-            <article class="impact-card reveal" data-delay="200">
-              <span class="value-index">03</span>
-              <h3>Performance-Denken aus FinTech-Nähe</h3>
-              <p>
-                Wo Millisekunden relevant sind, entstehen saubere Prioritäten: Effizienz,
-                Korrektheit, Stabilität und klare technische Entscheidungen.
-              </p>
-            </article>
-
-            <article class="impact-card reveal" data-delay="300">
-              <span class="value-index">04</span>
-              <h3>Leadership und Verständlichkeit</h3>
-              <p>
-                Lead-Developer-Erfahrung, Mentoring und Tutoring sorgen dafür, dass
-                technische Exzellenz auch im Team Wirkung entfaltet.
-              </p>
+            <article class="story-card reveal" data-delay="120">
+              <p class="panel-label" id="strengthsLabel"></p>
+              <h3 id="strengthsTitle"></h3>
+              <div class="promise-list" id="promiseList"></div>
             </article>
           </div>
         </section>
 
-        <section class="section narrative-section">
+        <section class="section" id="impact">
           <div class="section-heading reveal">
-            <p class="eyebrow">Executive Summary</p>
-            <h2>Profil, Arbeitsweise und technische Haltung</h2>
+            <p class="section-kicker" id="impactKicker"></p>
+            <h2 id="impactTitle"></h2>
+            <p class="section-copy" id="impactIntro"></p>
           </div>
 
-          <div class="narrative-layout">
-            <article class="story-card reveal spotlight-card">
-              <p class="panel-label">Über mich</p>
-              <h3>Research-grade thinking. Production-grade execution.</h3>
-              <p>
-                I am a Senior AI Engineer who designs and delivers intelligent,
-                high-performance systems built to operate at scale. My expertise sits
-                at the intersection of AI, High Performance Computing, and FinTech,
-                where milliseconds matter and correctness is critical.
-              </p>
-              <p>
-                I build production-grade AI systems, optimize complex algorithms down
-                to the hardware level, and architect scalable software that turns
-                advanced research into measurable business results.
-              </p>
-            </article>
-
-            <article class="story-card reveal" data-delay="140">
-              <p class="panel-label">Arbeitsweise</p>
-              <h3>Von Low-Level-Performance bis AI-native Plattformen</h3>
-              <p>
-                Lars arbeitet fluide über C++, Rust, Python, C#, Java, Julia und Flutter.
-                Er kann tief im System optimieren und gleichzeitig Produkte so bauen,
-                dass sie im Alltag belastbar, wartbar und skalierbar bleiben.
-              </p>
-              <div class="promise-list">
-                <div>
-                  <strong>Outperform</strong>
-                  <span>Leistung gezielt verbessern, statt Komplexität nur zu verwalten</span>
-                </div>
-                <div>
-                  <strong>Outscale</strong>
-                  <span>Architektur mit Blick auf Wachstum, Last und Langlebigkeit</span>
-                </div>
-                <div>
-                  <strong>Outlast</strong>
-                  <span>Systeme entwickeln, die auch unter realem Druck sauber bestehen</span>
-                </div>
-              </div>
-            </article>
-          </div>
+          <div class="impact-grid" id="impactGrid"></div>
         </section>
 
-        <section class="section timeline-section" id="erfahrung">
+        <section class="section" id="experience">
           <div class="section-heading reveal">
-            <p class="eyebrow">Berufserfahrung</p>
-            <h2>Relevante Stationen für High-Impact Engineering</h2>
+            <p class="section-kicker" id="experienceKicker"></p>
+            <h2 id="experienceTitle"></h2>
+            <p class="section-copy" id="experienceIntro"></p>
           </div>
 
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-date">Juli 2025 - heute</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>LBBW</h3>
-                    <span>Senior Software Engineer | Vollzeit | Deutschland</span>
-                  </div>
-                  <strong class="timeline-focus">AI • Java • Enterprise</strong>
-                </div>
-                <p>
-                  Entwicklung anspruchsvoller Software im professionellen Finanzumfeld
-                  mit Fokus auf Artificial Intelligence und Java-basierte Lösungen.
-                </p>
-                <ul class="chip-row">
-                  <li>Artificial Intelligence</li>
-                  <li>Java</li>
-                  <li>Enterprise Delivery</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="100">
-              <div class="timeline-date">Apr. 2022 - Aug. 2025</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>BTIG</h3>
-                    <span>Vice President | Vollzeit</span>
-                  </div>
-                  <strong class="timeline-focus">Lead Developer</strong>
-                </div>
-                <p>
-                  Entwicklung von Trading-Algorithmen und Backend-Services als Lead Developer
-                  mit technischer Verantwortung in einem leistungsgetriebenen FinTech-Setup.
-                </p>
-                <ul class="chip-row">
-                  <li>Algorithmic Trading</li>
-                  <li>Backend Services</li>
-                  <li>Artificial Intelligence</li>
-                  <li>Visual Studio</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="180">
-              <div class="timeline-date">Feb. 2020 - Apr. 2022</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>BTIG</h3>
-                    <span>Associate Developer | Ingolstadt, Bayern</span>
-                  </div>
-                  <strong class="timeline-focus">Algorithms • Data Science</strong>
-                </div>
-                <p>
-                  Arbeit an Algorithmen und Data-Science-Themen mit C#, Julia und Python.
-                  Solider Aufbau der späteren Verantwortung in handelsnahen Systemen.
-                </p>
-                <ul class="chip-row">
-                  <li>C#</li>
-                  <li>Julia</li>
-                  <li>Python</li>
-                  <li>Data Science</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="260">
-              <div class="timeline-date">2015 - 2022</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>Selbstständig</h3>
-                    <span>Video Producer | YouTube Tutorials</span>
-                  </div>
-                  <strong class="timeline-focus">Communication</strong>
-                </div>
-                <p>
-                  Erstellung von Videos und Tutorials in Mathematik, Physik und Informatik.
-                  Starke Kombination aus Wissensaufbereitung, Eigenverantwortung und Reichweite.
-                </p>
-                <ul class="chip-row">
-                  <li>Business Development</li>
-                  <li>Content Creation</li>
-                  <li>Presentation</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="340">
-              <div class="timeline-date">Juli 2014 - 2020</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>Selbstständig</h3>
-                    <span>Nachhilfelehrer für Mathematik | Region Stuttgart</span>
-                  </div>
-                  <strong class="timeline-focus">Mentoring</strong>
-                </div>
-                <p>
-                  Langjährige Vermittlung mathematischer Inhalte mit hoher Klarheit,
-                  Geduld und pädagogischer Stärke.
-                </p>
-                <ul class="chip-row">
-                  <li>Tutoring</li>
-                  <li>Business Development</li>
-                  <li>Critical Thinking</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="420">
-              <div class="timeline-date">2014 - 2019</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>University of Stuttgart</h3>
-                    <span>Tutor | Informatik, Java und Mentoring</span>
-                  </div>
-                  <strong class="timeline-focus">Teaching</strong>
-                </div>
-                <p>
-                  Tutoring in Computer Science, Begleitung neuer Studierender und
-                  Vermittlung technischer Grundlagen mit Fokus auf Java und Engineering.
-                </p>
-                <ul class="chip-row">
-                  <li>Java</li>
-                  <li>Engineering</li>
-                  <li>Mentoring</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="500">
-              <div class="timeline-date">Jan. 2014 - Dez. 2014</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>Allianz</h3>
-                    <span>Intern | GUI Programming in Java</span>
-                  </div>
-                  <strong class="timeline-focus">Java UI</strong>
-                </div>
-                <p>
-                  Frühe professionelle Praxis in der Java-Entwicklung mit Fokus auf GUI-Programmierung
-                  und technische Grundlagen im Unternehmenskontext.
-                </p>
-                <ul class="chip-row">
-                  <li>Java</li>
-                  <li>Back-End Web Development</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal" data-delay="580">
-              <div class="timeline-date">Okt. 2012</div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <h3>SAP</h3>
-                    <span>Intern | Programming</span>
-                  </div>
-                  <strong class="timeline-focus">ABAP</strong>
-                </div>
-                <p>
-                  Früher Einblick in professionelle Softwareentwicklung und Programmierpraxis bei SAP.
-                </p>
-                <ul class="chip-row">
-                  <li>ABAP</li>
-                  <li>Programming</li>
-                </ul>
-              </div>
-            </article>
-          </div>
+          <div class="timeline" id="timeline"></div>
         </section>
 
-        <section class="section skills-section" id="skills">
+        <section class="section" id="skills">
           <div class="section-heading reveal">
-            <p class="eyebrow">Kernkompetenzen</p>
-            <h2>Technologien, Domänenwissen und Stärken mit Signalwirkung</h2>
+            <p class="section-kicker" id="skillsKicker"></p>
+            <h2 id="skillsTitle"></h2>
+            <p class="section-copy" id="skillsIntro"></p>
           </div>
 
           <div class="skills-layout">
-            <article class="skills-panel reveal spotlight-card">
-              <p class="panel-label">Programmiersprachen & Frameworks</p>
-              <h3>Vielseitig in der Sprache, präzise in der Umsetzung</h3>
-              <div class="skills-cloud">
-                <span>C#</span>
-                <span>Java</span>
-                <span>C++</span>
-                <span>Python</span>
-                <span>Rust</span>
-                <span>Julia</span>
-                <span>Flutter</span>
-                <span>JavaScript</span>
-                <span>ABAP</span>
-              </div>
+            <article class="skills-panel spotlight-card reveal">
+              <p class="panel-label" id="techStackLabel"></p>
+              <h3 id="techStackTitle"></h3>
+              <div class="tag-cloud" id="techStackCloud"></div>
             </article>
 
-            <article class="skills-panel reveal" data-delay="120">
-              <p class="panel-label">AI & Data</p>
-              <h3>Modelle, Algorithmen und wissenschaftliche Tiefe</h3>
-              <ul class="detail-list">
-                <li>Artificial Intelligence, Machine Learning und AI-native Software</li>
-                <li>Algorithmen, Statistical Learning, Biostatistics und Simulationen</li>
-                <li>Mathematische Modelle, Mathematical Statistics und Analyse</li>
-                <li>High Performance Computing mit Fokus auf Effizienz und Skalierung</li>
-              </ul>
+            <article class="skills-panel reveal" data-delay="100">
+              <p class="panel-label" id="domainLabel"></p>
+              <h3 id="domainTitle"></h3>
+              <ul class="detail-list" id="domainList"></ul>
             </article>
 
-            <article class="skills-panel reveal" data-delay="220">
-              <p class="panel-label">Engineering & Delivery</p>
-              <h3>Von der Architektur bis zur belastbaren Produktion</h3>
-              <ul class="detail-list">
-                <li>Software Development, Back-End Engineering und saubere Delivery</li>
-                <li>Electronic Trading, Algorithmic Trading und FinTech-Umfelder</li>
-                <li>Git, Linux, Visual Studio, Android, LaTeX, Matlab und Simulink</li>
-                <li>Leading Development Teams und Strategic Planning</li>
-              </ul>
+            <article class="skills-panel reveal" data-delay="180">
+              <p class="panel-label" id="deliveryLabel"></p>
+              <h3 id="deliveryTitle"></h3>
+              <ul class="detail-list" id="deliveryList"></ul>
             </article>
 
-            <article class="skills-panel reveal" data-delay="320">
-              <p class="panel-label">Persönliche Stärken</p>
-              <h3>Technisch stark, analytisch klar und gut vermittelbar</h3>
-              <ul class="detail-list">
-                <li>Analytische und kreative Problemlösung unter anspruchsvollen Bedingungen</li>
-                <li>Tutoring, Mentoring und Präsentationsstärke mit echter Substanz</li>
-                <li>Kollaborative Arbeitsweise und hoher Qualitätsanspruch</li>
-                <li>Breite Basis in Mathematik, Physik, Informatik, Mechatronik und Robotics</li>
-              </ul>
+            <article class="skills-panel reveal" data-delay="260">
+              <p class="panel-label" id="softSkillsLabel"></p>
+              <h3 id="softSkillsTitle"></h3>
+              <ul class="detail-list" id="softSkillsList"></ul>
             </article>
           </div>
         </section>
 
-        <section class="section capability-section">
+        <section class="section" id="education">
           <div class="section-heading reveal">
-            <p class="eyebrow">Stärken im Überblick</p>
-            <h2>Wofür man Lars mit hoher Wahrscheinlichkeit einstellen sollte</h2>
-          </div>
-
-          <div class="capability-grid">
-            <article class="capability-card reveal">
-              <strong>Er übernimmt schwierige technische Probleme.</strong>
-              <p>Besonders dort, wo Leistung, Korrektheit und Architekturqualität gleichzeitig relevant sind.</p>
-            </article>
-            <article class="capability-card reveal" data-delay="120">
-              <strong>Er verbindet Forschung mit Umsetzung.</strong>
-              <p>Komplexe Ideen werden in Systeme übersetzt, die im realen Betrieb belastbar funktionieren.</p>
-            </article>
-            <article class="capability-card reveal" data-delay="240">
-              <strong>Er denkt in Wirkung statt nur in Features.</strong>
-              <p>Technische Entscheidungen werden entlang von Performance, Wartbarkeit und Business-Nutzen getroffen.</p>
-            </article>
-            <article class="capability-card reveal" data-delay="360">
-              <strong>Er hebt auch das Teamniveau.</strong>
-              <p>Mentoring, Kommunikation und Klarheit machen ihn nicht nur stark individuell, sondern auch im Zusammenspiel.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section education-section" id="ausbildung">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Ausbildung</p>
-            <h2>Fundament aus Informatik, Mathematik und Engineering</h2>
+            <p class="section-kicker" id="educationKicker"></p>
+            <h2 id="educationTitle"></h2>
           </div>
 
           <div class="education-card reveal spotlight-card">
             <div class="education-main">
-              <p class="panel-label">Universität Stuttgart</p>
-              <h3>Bachelor of Science</h3>
-              <p>Mechatronics, Robotics and Automation Engineering</p>
-              <span>2014 - 2019</span>
+              <p class="panel-label" id="educationInstitution"></p>
+              <h3 id="educationDegree"></h3>
+              <p id="educationProgram"></p>
+              <span id="educationYears"></span>
             </div>
 
-            <div class="education-details">
-              <div>
-                <h4>Thesis</h4>
-                <p>Development of an LMI solver in Julia</p>
-              </div>
-              <div>
-                <h4>Schwerpunkte</h4>
-                <p>Artificial Intelligence, Informatik und Mathematics</p>
-              </div>
-              <div>
-                <h4>Fachliche Basis</h4>
-                <p>Robotics, Mathematical Statistics, Software Development und Critical Thinking</p>
-              </div>
-            </div>
+            <div class="education-details" id="educationDetails"></div>
           </div>
         </section>
 
-        <section class="section closing-section reveal">
-          <div class="closing-card spotlight-card">
-            <p class="eyebrow">Kurzfazit</p>
-            <h2>
-              Ein Profil für Arbeitgeber, die nicht einfach einen Entwickler,
-              sondern echte technische Substanz einstellen wollen.
-            </h2>
-            <p>
-              Lars vereint AI-Kompetenz, Engineering-Tiefe, Performance-Denken,
-              FinTech-Erfahrung und klare Delivery-Orientierung. Für Teams mit hohen
-              Ansprüchen an Qualität, Skalierung und Wirkung ist dieses Profil sofort relevant.
-            </p>
+        <section class="section" id="contact">
+          <div class="section-heading reveal">
+            <p class="section-kicker" id="contactKicker"></p>
+            <h2 id="contactTitle"></h2>
+            <p class="section-copy" id="contactIntro"></p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-grid" id="contactGrid"></div>
+
+            <aside class="contact-panel spotlight-card reveal" data-delay="120">
+              <p class="panel-label" id="contactPanelLabel"></p>
+              <h3 id="contactPanelTitle"></h3>
+              <p id="contactPanelText"></p>
+              <div class="contact-actions">
+                <button class="button button-primary" type="button" id="contactPdfButton"></button>
+                <a class="button button-ghost" href="#top" id="contactBackTop"></a>
+              </div>
+            </aside>
           </div>
         </section>
       </main>
