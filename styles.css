@@ -835,6 +835,10 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .marquee {
+    border-radius: var(--radius-xl);
+  }
+
   .hero-stat-stack,
   .education-details,
   .trust-strip {
